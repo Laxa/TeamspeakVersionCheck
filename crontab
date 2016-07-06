@@ -1,0 +1,2 @@
+# run everyday at 4 AM
+0 4 * * * /path/to/TeamspeakVersionCheck/script.py
