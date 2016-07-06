@@ -12,6 +12,7 @@ FILE = "VERSION"
 
 if __name__ == "__main__":
     requests.packages.urllib3.disable_warnings()
+    os.chdir(os.path.dirname(os.path.realpath(__file__)))
     while True:
         data = requests.get(URL)
         if data.status_code == 200:
