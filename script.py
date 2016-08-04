@@ -26,7 +26,7 @@ if __name__ == "__main__":
         if prev["client"] != client:
             print "Client is now: " + client
         if prev["server"] != server:
-            print "Server is now: " + client
+            print "Server is now: " + server
         with open(FILE, "w") as f:
             f.write(json.dumps({"server":server, "client":client}))
     else:
