@@ -24,12 +24,12 @@ if __name__ == '__main__':
         with open(FILE, 'r') as f:
             prev = json.loads(f.read())
         if prev['client'] != client:
-            print 'Client is now: ' + client
+            print('Client is now: ' + client)
         if prev['server'] != server:
-            print 'Server is now: ' + server
+            print('Server is now: ' + server)
         with open(FILE, 'w') as f:
             f.write(json.dumps({'server':server, 'client':client}))
     else:
-        print 'Client: %s\nServer: %s' % (client, server)
+        print('Client: %s\nServer: %s' % (client, server))
         with open(FILE, 'w') as f:
             f.write(json.dumps({'server':server, 'client':client}))
